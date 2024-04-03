@@ -29,7 +29,7 @@ module "sg" {
 
   name        = "jenkins_sg"
   description = "security group for jenkins server"
-  vpc_id      = module.vpc.default_vpc_id
+  vpc_id      = module.vpc.vpc_id
 
   
   ingress_with_cidr_blocks = [
@@ -46,7 +46,7 @@ module "sg" {
       protocol    = "tcp"
       description = "SSH"
       cidr_blocks = "0.0.0.0/0"
-    },
+    }
   ]
   egress_with_cidr_blocks = [
    {
