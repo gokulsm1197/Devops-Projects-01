@@ -16,6 +16,10 @@ module "vpc" {
     Terraform = "true"
     Environment = "dev"
   }
+
+  public_subnet_tags = {
+    Name = "jenkins-subnet"
+  }
 }
 
 # sg
