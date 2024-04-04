@@ -15,5 +15,6 @@ spec:
       containers:
       - name: nginx
         image: gokulsm/dev
+        imagePullpolicy:Always
         ports:
         - containerPort: 80
