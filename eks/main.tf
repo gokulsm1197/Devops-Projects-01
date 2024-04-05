@@ -16,16 +16,16 @@ module "vpc" {
 
 
   tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/sm-eks-cluster" = "shared"
   }
 
   public_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/sm-eks-cluster" = "shared"
     "kubernetes.io/role/elb" =1
   }
 
   private_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/sm-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb" =1
   }
 }
@@ -35,7 +35,7 @@ module "vpc" {
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
 
-  cluster_name    = "my-eks-cluster"
+  cluster_name    = "sm-eks-cluster"
   cluster_version = "1.24"
 
   cluster_endpoint_public_access = true
