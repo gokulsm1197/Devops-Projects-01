@@ -18,7 +18,7 @@ module "vpc" {
   }
 
   public_subnet_tags = {
-    Name = "jenkins-subnet"
+    Name = "jenkins-subnt"
   }
 }
 
