@@ -1,0 +1,81 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'node21'
+    }
+
+    environment {
+        SCANNER_HOME= tool 'sonar-scanner'
+    }
+
+    stages {
+        stage('Git Checkout') {
+            steps {
+                git branch: 'master', credentialsId: 'git', url: 'https://github.com/gokulsm1197/tarraform-eks.git'
+            }
+        }
+        
+        stage('Install dependencies') {
+            steps {
+                sh "npm install"
+            }
+        }
+        
+        stage('Unit Tests') {
+            steps {
+                sh "npm test"
+            }
+        }
+        
+        stage('Trivy FS scan') {
+            steps {
+                sh "trivy fs --format table -o fs-report.html ."
+            }
+        }
+        
+        stage('SonarQube') {
+            steps {
+                withSonarQubeEnv('sonar') {
+                    
+                    sh " $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectKey=Campground -Dsonar.projectName=Campground"
+
+                }
+            }
+        }
+        
+        stage('Docker Build & Tag') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'dockerhub') {
+                        sh "docker build -t gokulsm/camp:latest ."
+                    }
+                }
+            }
+        }
+        
+        stage('Trivy Image Scan') {
+            steps {
+                sh "trivy image --format table -o image-report.html gokulsm/camp:latest"
+            }
+        }
+        
+        stage('Docker Push Image') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'dockerhub') {
+                        sh "docker push gokulsm/camp:latest"
+                    }
+                }
+            }
+        }
+        
+        stage('Docker Deploy to dev') {
+            steps {
+                script {
+                    sh "docker run -d -p 3000:3000 gokulsm/camp:latest"
+                }
+            }
+        }
+    }
+}
