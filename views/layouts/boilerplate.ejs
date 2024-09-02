@@ -18,7 +18,7 @@
 </head>
 
 <body class="d-flex flex-column vh-100">
-    <%- include('../partials/navbar')%>
+    <%- include('../partials/navbar', { currentUser: currentUser })%>
         <main class="container mt-2">
             <%- include('../partials/flash')%>
                 <%- body %>
