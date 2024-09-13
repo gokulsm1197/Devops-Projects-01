@@ -32,7 +32,7 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 
 ## Components and Tools Used:
 
-#### Node.js Application with MongoDB:
+### Node.js Application with MongoDB:
 
 A Node.js application built with Express and MongoDB for backend functionality, providing RESTful APIs for CRUD operations. MongoDB serves as the primary database for data storage and retrieval.
 
