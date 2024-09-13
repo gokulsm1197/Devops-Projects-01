@@ -22,6 +22,9 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 - Helm
 - Prometheus
 - Grafana
+
+
+
 ![App Screenshot](https://github.com/user-attachments/assets/d73ded4b-fd28-4f6d-9a53-7004ebf9140d)
 
 
