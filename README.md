@@ -36,20 +36,20 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 
 A Node.js application built with Express and MongoDB for backend functionality, providing RESTful APIs for CRUD operations. MongoDB serves as the primary database for data storage and retrieval.
 
-#### Source Code Management with GitHub:
+### Source Code Management with GitHub:
 
 The application's source code is managed using GitHub, enabling version control, collaboration, and automated CI/CD pipeline triggers.
-####  Continuous Integration and Continuous Deployment (CI/CD) with Jenkins
+###  Continuous Integration and Continuous Deployment (CI/CD) with Jenkins
 Jenkins automates the CI/CD pipeline to manage the build, test, and deployment processes. The pipeline is defined using a Jenkinsfile, containing stages for building, testing, security scanning, and deployment to the Kubernetes cluster.
 
 **Jenkins Agent for EKS Deployment** 
 A Jenkins agent, configured to run on a dedicated node or container, is used specifically for handling deployments to Amazon EKS. This setup allows for secure and efficient interaction with the Kubernetes cluster.
 
-#### Infrastructure as Code (IaC) with Terraform:
+### Infrastructure as Code (IaC) with Terraform:
 
 The Amazon EKS cluster, which is used to orchestrate containerized applications, is provisioned and managed using Terraform. Terraform scripts define the entire infrastructure setup, enabling version control and reproducibility of environments.
 
-#### Code Quality and Security Analysis with SonarQube and Trivy:
+### Code Quality and Security Analysis with SonarQube and Trivy:
 
 **SonarQube** Integrated into the Jenkins pipeline to perform static code analysis, checking for code quality issues, bugs, and vulnerabilities.
 
@@ -57,46 +57,46 @@ The Amazon EKS cluster, which is used to orchestrate containerized applications,
 
 **Trivy Image Scan** Conducts security scans on Docker images to detect vulnerabilities before pushing to Docker Hub or deploying to EKS.
 
-#### Containerization with Docker and Docker Hub:
+### Containerization with Docker and Docker Hub:
 
 The application is containerized using Docker to ensure consistency across development, testing, and production environments.
 
 Docker images are built as part of the CI/CD pipeline and pushed to Docker Hub, enabling version control and easy deployment.
-#### Container Orchestration with Amazon Elastic Kubernetes Service (EKS):
+### Container Orchestration with Amazon Elastic Kubernetes Service (EKS):
 
 Amazon EKS is used for container orchestration, ensuring a scalable, highly available, and managed Kubernetes environment for the Node.js application.
 
 Kubernetes manifests or Helm charts are used for deploying the application to EKS, automating tasks such as scaling, updating, and monitoring.
-#### Secure Access via Jump Server:
+### Secure Access via Jump Server:
 
 A Jump Server (Bastion Host) is set up to provide secure access to the Amazon EKS cluster and other AWS resources, enhancing security by preventing direct access from the public internet.
-#### Traffic Management with AWS Elastic Load Balancer (ELB):
+### Traffic Management with AWS Elastic Load Balancer (ELB):
 
 An AWS Elastic Load Balancer is used to manage incoming traffic and distribute it across multiple pods in the EKS cluster, ensuring load balancing and high availability.
-#### Monitoring and Observability with Prometheus and Grafana:
+### Monitoring and Observability with Prometheus and Grafana:
 **Prometheus:** Deployed in the EKS cluster to collect and store metrics from the application and Kubernetes components, providing insights into performance and resource usage.
 
 **Grafana:** Integrated with Prometheus to visualize metrics through interactive dashboards, enabling real-time monitoring, alerting, and troubleshooting.
 
 ## Project Workflow
-#### Source Code Management:
+### Source Code Management:
 
 Developers commit changes to the GitHub repository, which automatically triggers the Jenkins pipeline.
-#### CI/CD Pipeline Execution:
+### CI/CD Pipeline Execution:
 
 **Build and Test:** Jenkins builds the Node.js application, runs unit tests, and checks for code quality using SonarQube.
 
 **Security Scanning:** Trivy performs both FS scans (on the source code) and image scans (on Docker images) to ensure security before deployment.
-#### Docker Image Build and Push:
+### Docker Image Build and Push:
 
 Docker images are built upon successful completion of tests and scans and are pushed to Docker Hub for storage and version control.
-#### Deployment to Amazon EKS:
+### Deployment to Amazon EKS:
 
 The Jenkins agent specifically configured for EKS interacts with the cluster to deploy the Docker images as Kubernetes pods. Helm charts or Kubernetes manifests are used to manage deployments.
-#### Traffic Routing and Load Balancing:
+### Traffic Routing and Load Balancing:
 
 The AWS Elastic Load Balancer (ELB) manages incoming traffic and distributes it across application instances in the EKS cluster.
-#### Monitoring and Alerting:
+### Monitoring and Alerting:
 
 Prometheus collects metrics from the application and Kubernetes cluster.
 
