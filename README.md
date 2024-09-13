@@ -129,6 +129,10 @@ Grafana visualizes these metrics and triggers alerts based on predefined thresho
 
 ![Screenshot (532)](https://github.com/user-attachments/assets/83afb7fa-6998-4309-89d9-027ef3be1957)
 
+## Pipeline Overview
+![Screenshot (635)](https://github.com/user-attachments/assets/7c3a078e-26cf-40ff-86b8-9c6043645af1)
+
+
 ## Jenkins credential setup
 ![Screenshot (615)](https://github.com/user-attachments/assets/5b5a03e5-f302-4f24-a43e-49e1a3acf607)
 
@@ -201,8 +205,6 @@ Grafana visualizes these metrics and triggers alerts based on predefined thresho
 ![Screenshot (652)](https://github.com/user-attachments/assets/3703d959-de5d-4011-a162-f7c20f82d2d9)
 ![Screenshot (655)](https://github.com/user-attachments/assets/2e0934ab-d332-4670-89f3-31a56bdbe512)
 
-## Pipeline Overview
-![Screenshot (635)](https://github.com/user-attachments/assets/7c3a078e-26cf-40ff-86b8-9c6043645af1)
 
 
 ## Monitoring Tools setup Grafana and Prometheus
