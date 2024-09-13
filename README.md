@@ -25,9 +25,7 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 - Grafana
 
 ## Pipeline Flow Diagram
-
-
-![App Screenshot](https://github.com/user-attachments/assets/d73ded4b-fd28-4f6d-9a53-7004ebf9140d)
+![P01](https://github.com/user-attachments/assets/83faa1ff-1385-448f-b83f-d145d1746dc5)
 
 
 ## Components and Tools Used:
