@@ -94,7 +94,7 @@ The AWS Elastic Load Balancer (ELB) manages incoming traffic and distributes it 
 Prometheus collects metrics from the application and Kubernetes cluster.
 
 Grafana visualizes these metrics and triggers alerts based on predefined thresholds, ensuring proactive monitoring and issue resolution.
-# Local Deployment Steps
+# Local and CICD Deployment Steps
 
 ## Clon the repository
 ![Screenshot (503)](https://github.com/user-attachments/assets/fcd55fdc-6797-446e-ae5a-937ab9a75888)
