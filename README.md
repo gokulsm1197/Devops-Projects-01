@@ -3,7 +3,7 @@
 Node.js Application with MongoDB: A DevOps-Centric Deployment on Amazon EKS
 ## Description:
 
-This project showcases a complete DevOps pipeline for deploying a Node.js application with MongoDB as the database, utilizing a suite of DevOps tools and cloud services to ensure continuous integration, continuous deployment, security, and monitoring. The project emphasizes best practices in containerization, orchestration, and monitoring using GitHub, Jenkins, Docker, Amazon EKS, and other DevOps tools to deliver a robust, scalable, and secure application deployment.
+This project showcases a complete DevOps pipeline for deploying a Node.js application with MongoDB as the database, utilizing a suite of DevOps tools and cloud services to ensure continuous integration, continuous deployment, security, and monitoring. The project emphasizes best practices in containerization, orchestration, and monitoring using GitHub, Jenkins, Docker, Amazon EKS,infrastructure as code terraform and other DevOps tools to deliver a robust, scalable, and secure application deployment.
 
 ## Tools and Technologies Used
 - Node.js
