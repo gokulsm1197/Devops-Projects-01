@@ -13,6 +13,7 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 - Jenkins Agent
 - Docker
 - Docker Hub
+- Terraform
 - SonarQube
 - Trivy FS Scan
 - Trivy Image Scan
@@ -28,13 +29,13 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 ![App Screenshot](https://github.com/user-attachments/assets/d73ded4b-fd28-4f6d-9a53-7004ebf9140d)
 
 
-## Components and Tools Used
+## Components and Tools Used:
 
-#### Node.js Application with MongoDB
+#### Node.js Application with MongoDB:
 
 A Node.js application built with Express and MongoDB for backend functionality, providing RESTful APIs for CRUD operations. MongoDB serves as the primary database for data storage and retrieval.
 
-#### Source Code Management with GitHub
+#### Source Code Management with GitHub:
 
 The application's source code is managed using GitHub, enabling version control, collaboration, and automated CI/CD pipeline triggers.
 ####  Continuous Integration and Continuous Deployment (CI/CD) with Jenkins
@@ -42,6 +43,11 @@ Jenkins automates the CI/CD pipeline to manage the build, test, and deployment p
 
 **Jenkins Agent for EKS Deployment** 
 A Jenkins agent, configured to run on a dedicated node or container, is used specifically for handling deployments to Amazon EKS. This setup allows for secure and efficient interaction with the Kubernetes cluster.
+
+#### Infrastructure as Code (IaC) with Terraform:
+
+The Amazon EKS cluster, which is used to orchestrate containerized applications, is provisioned and managed using Terraform. Terraform scripts define the entire infrastructure setup, enabling version control and reproducibility of environments.
+
 #### Code Quality and Security Analysis with SonarQube and Trivy:
 
 **SonarQube** Integrated into the Jenkins pipeline to perform static code analysis, checking for code quality issues, bugs, and vulnerabilities.
