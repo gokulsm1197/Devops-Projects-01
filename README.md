@@ -95,8 +95,7 @@ Prometheus collects metrics from the application and Kubernetes cluster.
 
 Grafana visualizes these metrics and triggers alerts based on predefined thresholds, ensuring proactive monitoring and issue resolution.
 ### Local Deployment Steps
-## Security group
-![Screenshot (501)](https://github.com/user-attachments/assets/e1f7d1d6-482b-4ba8-8cea-7b6ef4b93320)
+
 ## Clon the repository
 ![Screenshot (503)](https://github.com/user-attachments/assets/fcd55fdc-6797-446e-ae5a-937ab9a75888)
 ## Package manager installation
