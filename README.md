@@ -214,7 +214,7 @@ Grafana visualizes these metrics and triggers alerts based on predefined thresho
 ![Screenshot (631)](https://github.com/user-attachments/assets/a3128784-8bd1-419e-b3da-005407a7a519)
 ![Screenshot (632)](https://github.com/user-attachments/assets/707a0742-98f1-4bd1-9dcf-3321d25b0f3a)
 
-## **This project provides a comprehensive DevOps solution for deploying a Node.js application with MongoDB on Amazon EKS. By leveraging tools such as Jenkins, Docker, SonarQube, Trivy, and AWS services, it achieves a secure, automated, and scalable deployment process. Real-time monitoring with Prometheus and Grafana further ensures reliability and performance optimization, making it a robust platform for modern cloud-native applications.**
+**This project provides a comprehensive DevOps solution for deploying a Node.js application with MongoDB on Amazon EKS. By leveraging tools such as Jenkins, Docker, SonarQube, Trivy, and AWS services, it achieves a secure, automated, and scalable deployment process. Real-time monitoring with Prometheus and Grafana further ensures reliability and performance optimization, making it a robust platform for modern cloud-native applications.**
 
 
-# Thank you.......
+# **Thank you.......**
