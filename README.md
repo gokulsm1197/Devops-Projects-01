@@ -17,7 +17,7 @@ This project showcases a complete DevOps pipeline for deploying a Node.js applic
 - SonarQube
 - Trivy FS Scan
 - Trivy Image Scan
-- Amazon Elastic Kubernetes Service (EKS
+- Amazon Elastic Kubernetes Service (EKS)
 - Jump Server (Bastion Host)
 - AWS Elastic Load Balancer (ELB)
 - Helm
